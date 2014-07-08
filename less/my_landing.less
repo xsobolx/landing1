@@ -1,0 +1,199 @@
+@import "bootstrap.less";
+
+@import "http://webfonts.ru/import/bender.css";
+@import "http://webfonts.ru/import/fontin.css";
+
+
+@font-family-serif:  "Bender";
+@font-family-sans-serif:       'Fontin Sans';
+
+@navbar-default-bg: #ffffff;
+@navbar-default-border: #eeeeee;
+@navbar-background-color: rgba(36, 36, 36, 0.90);
+@background-color: #f5f5f5;
+@header-text:#999999;
+@btn-send: #3498DB;
+
+body {
+  font-size: 16px;
+  color: #555555;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  font-family: "Raleway", "Arial Black", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.landing-navbar {
+  .navbar;
+  .navbar-default;
+  .navbar-fixed-top;
+}
+
+.landing-map {
+  height: 350px;
+  display: block;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  width: 90%;
+  float: left;
+  border: 1px solid #cccccc;
+}
+
+.landing-container {
+  .container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  };
+  background: none repeat scroll 0 0 @background-color;
+  padding: 0;
+  text-align: center;
+
+}
+
+.landing-navbar {
+  background-color: @navbar-background-color;
+  border-bottom: 1px solid #000000;
+
+  .navbar-nav > li  {
+
+    a {
+      line-height: 20px;
+      color: @header-text;
+    }
+
+    a:hover, a:active, a:focus {
+      color: #ffffff;
+      background-color: #080808;
+    }
+
+    a:before, a:after {
+      transition: color 0.1s ease-in 0s, background 0.1s ease-in 0s;
+    }
+
+  }
+
+  .navbar-brand {
+    color: #999;
+  }
+
+  .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active{
+    color: #ffffff;
+    background-color: #080808;
+  }
+
+  .navbar-brand:before, .navbar-brand:after {
+    transition: color 0.1s ease-in 0.1s, background 0.1s ease-in 0.1s;
+  }
+}
+
+.page-header {
+  text-align: center;
+  color: #333333;
+  font-weight: 300;
+  border-bottom: none;
+  font-family: "Raleway", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+hr:before {
+  background: none repeat scroll 0 0 #cccccc;
+  content: " ";
+  height: 2px;
+  left: 25%;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+hr {
+  border: medium none;
+  position: relative;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+  line-height: 120%;
+  background: none repeat scroll 0 0 #ffffff;
+  padding-bottom: 40px;
+  padding-top: 25px;
+  .row {
+    padding-left: 40px;
+  }
+}
+
+#services, #command, #clients {
+  padding: 25px 20% 25px 20%;
+}
+
+#clients {
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.list-group-item {
+    background-color: lighten(@background-color, 2%);
+}
+
+
+.panel-default > .panel-heading, .btn-default:hover, {
+  background-color: @navbar-background-color;
+  color: lighten(@header-text, 20%);
+}
+
+.btn-default, .btn-default:active, .btn-default:focus {
+  background-color: lighten(@navbar-background-color, 40%);
+  color: @navbar-background-color;
+
+}
+
+.btn-send, .btn-send:hover {
+  color: #fafafa;
+  background-color: @btn-send;
+  border-color: darken(@btn-send, 10%);
+}
+
+#InputMessage {
+  height: 75px;
+}
+
+.address {
+
+  padding-top: 20px;
+  letter-spacing: .15em;
+  word-spacing: .5em;
+}
+
+.footer-wrap {
+  background: none repeat scroll 0 0 @navbar-background-color;
+  border-bottom: 1px solid #000;
+  margin-top: o;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  h4 {
+    color: #999999;
+  }
+}
+
+.row {
+  margin-right: 0;
+}
+
+
+
+
+
+
+
